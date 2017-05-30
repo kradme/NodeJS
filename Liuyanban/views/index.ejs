@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+</head>
+<body>
+    <div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label"> 姓名：</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label"> 留言：</label>
+                <div class="col-sm-10">
+                   <textarea class="form-control" rows="3" id="text" placeholder="请输入留言"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" id="submit">提交</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $("#submit").click(function () {
+        $.post("/insertLiuyan",{
+            "name":$("#name").val(),
+            "text":$("#text").val()
+        },function (data,status) {
+            console.log(data+","+status);
+
+            alert(data);
+        });
+    });
+
+</script>
+</body>
+
+</html>
