@@ -31,4 +31,8 @@ app.get("/du",function (req,res) {
     }
 
 });
+//删除
+app.get("/del",function (req,res) {
+    var
+})
 app.listen(3000);

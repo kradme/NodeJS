@@ -35,21 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mongo/model/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="510">
+              <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_ 测试Dao.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02_ 测试Dao.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mongo/02_ 测试Dao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="510">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -84,8 +84,8 @@
         <option value="$PROJECT_DIR$/littleAlbum/controller/router.js" />
         <option value="$PROJECT_DIR$/DAY04/01.html" />
         <option value="$PROJECT_DIR$/DAY04/01_mongo.js" />
-        <option value="$PROJECT_DIR$/Mongo/model/db.js" />
         <option value="$PROJECT_DIR$/Mongo/02_ 测试Dao.js" />
+        <option value="$PROJECT_DIR$/Mongo/model/db.js" />
       </list>
     </option>
   </component>
@@ -311,12 +311,12 @@
       <workItem from="1495935497019" duration="1663000" />
       <workItem from="1495937176584" duration="404000" />
       <workItem from="1495975455929" duration="1240000" />
-      <workItem from="1496070249105" duration="6508000" />
+      <workItem from="1496070249105" duration="8707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25173000" />
+    <option name="totallyTimeSpent" value="27372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -609,21 +609,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mongo/model/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mongo/02_ 测试Dao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="510">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mongo/model/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
