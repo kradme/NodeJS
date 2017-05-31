@@ -12,5 +12,6 @@ app.use(express.static('./public'));
 app.get('/',router.showIdex);
 
 app.post("/insertLiuyan",router.insertLiuyan);
+app.get("/readText",router.readText);
 
 app.listen(3000);

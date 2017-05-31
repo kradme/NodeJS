@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>留言板</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+        #chenggong, #shibai {
+            display: none;
+        }
+        .liuyankuai{
+            padding:10px 0;
+            border-bottom: 1px solid #ccc;
+
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -27,12 +38,44 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div id="allLiuyan">
 
     </div>
+    <script type="text/template" id="templ" >
+        <div class="liuyankuai">
+            <p> 姓名：{{=name }}</p>
+            <p> 留言：{{=text }}</p>
+            <p> 时间：{{=time }}></p>
+        </div>
+    </script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript" src="js/underscore-noflect.js"></script><script type="text/javascript">
+
+    $.get("/readText",function (result) {
+
+        //留言块模版
+        var compiled = _.template($("#templ").html());
+        //清空原留言
+        $("#allLiuyan").html("");
+        for(var i=0;i<result.result.length;i++){
+            var html = compiled({
+                name:result.result[i].name,
+                text:result.result[i].text,
+                time:result.result[i].time
+            });
+
+            //DOM操作，添加节点
+            $("#allLiuyan").append($(html));
+        }
+
+    });
+
+
+
+    //提交
     $("#submit").click(function () {
         $.post("/insertLiuyan",{
             "name":$("#name").val(),
